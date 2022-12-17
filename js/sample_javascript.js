@@ -15,5 +15,5 @@ function auto_click() {
     let autoclick_lv = parseInt(autoclick.innerText.split(".")[1]);
     autoclick_lv += 1;
     autoclick.innerText = "オートクリックLv." + autoclick_lv;
-    ps = ps + 1;
+    ps = ps + 0.001;
 }
