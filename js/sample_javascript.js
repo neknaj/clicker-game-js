@@ -2,8 +2,8 @@
 function addscore(lv) {
     const score_view = document.getElementById("score");
     a = a + lv;
-    console.log(a);
-    score_view.innerText = a;
+    // console.log(a);
+    score_view.innerText = Math.ceil(a);
 }
 function click_up(){
     const click = document.getElementById("clicklevel");
