@@ -4,16 +4,21 @@
         <meta charset="UTF-8">
         <title>onclickサンプル</title>
         <script>
-                let a = 1;
+            let a = 0;
+            let lv = 0;
+            setInterval(() => {
+                addscore(lv)
+            }, 1000)
         </script>
         <script src="js/sample_javascript.js"></script>
     </head>
     <body>
         <p>ボタンを押してください</p>
         <div>
-            <div id="score"></div>
-            <button type="button" value="ボタンを押す" onclick="alertButton()"><img src="neknaj.png" height ="80" width="100" />
-            </button>
+            スコア
+            <div id="score">0</div>
+            <button type="button" value="ボタンを押す" onclick="addscore()"><img src="neknaj.png" height ="80" width="100" /></button>
+            <button type="button" value="自動タップ" onclick="auto_click()" id="autoclick">オートクリッカーlv.0</button>
         </div>
     </body>
 </html>
