@@ -13,7 +13,7 @@ function click_up(){
 function auto_click() {
     const autoclick = document.getElementById("autoclick");
     let autoclick_lv = parseInt(autoclick.innerText.split(".")[1]);
-    autoclick_lv += 1;
+    autoclick_lv *= 1.1;
     autoclick.innerText = "オートクリックLv." + autoclick_lv;
     ps = ps + 0.01;
 }
